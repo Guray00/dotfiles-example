@@ -13,17 +13,17 @@
   roles:
     - role: geerlingguy.mac.homebrew
       tags: ["brew"]
+      homebrew_taps: []
       when: ansible_distribution == 'MacOSX'
 
     - role: brew
       tags: ["brew"]
+      homebrew_taps: []
       when: ansible_distribution == 'MacOSX'
 
+    # syslink and general setup
     - role: dotfiles
       tags: ["dotfiles"]
-
-    - role: gem
-      tags: ["gem"]
 
     - role: npm
       tags: ["npm"]
@@ -41,3 +41,7 @@
 
     - role: docker
       tags: ["docker"]
+
+    # - role: gem
+      # tags: ["gem"]
+

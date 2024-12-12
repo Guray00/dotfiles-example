@@ -1,39 +1,16 @@
 dotfiles
 ========
 
-[![GitHub branch checks state](https://img.shields.io/github/checks-status/frdmn/dotfiles/master)](https://github.com/frdmn/dotfiles/actions/workflows/ci.yml)
-![GitHub Repo stars](https://img.shields.io/github/stars/frdmn/dotfiles)
-[![GitHub](https://img.shields.io/github/license/frdmn/dotfiles)](https://github.com/frdmn/dotfiles)
-
-[Ansible](https://www.ansible.com/)-based dotfile setup for macOS systems that is really simple and easy to understand.
-
-iTerm | Visual Studio Code
---- | ---
-[![](https://asciinema.org/a/cPPgWS3Ju2twoyl7U5UfFYOYI.svg)](https://asciinema.org/a/cPPgWS3Ju2twoyl7U5UfFYOYI) <center></center> | ![](https://i.imgur.com/abpdBUY.png)
-
-### Features
-
-* Dotfile wrapper based on [Ansible](https://www.ansible.com/), that takes care of...
-    * bash/zsh configuration files
-    * Homebrew and Cask packages
-    * Mac App Store apps
-    * Node `npm` packages
-    * Ruby `gem` packages
-    * Python `pip` packages
-    * macOS `defaults` (plist settings)
-* Docker host cleanup/prune
-* [Vundle](https://github.com/gmarik/Vundle.vim) VIm plugin manager
-* Fish-like auto autosuggestions in ZSH ([zsh-autosuggestions](https://github.com/tarruda/zsh-autosuggestions) plugin)
-* Several additional, preconfigured ZSH plugins (using [zplug](https://github.com/zplug/zplug)):
-    * [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search) plugin
-    * [zsh-notify](https://github.com/marzocchi/zsh-notify) plugin
-    * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-notify) plugin
-    * [zsh-autosuggestions](https://github.com/tarruda/zsh-autosuggestions) plugin
-* Configured GnuPG including `gpg-agent` and enabled commit signatures in git
-* [One Dark Pro](https://github.com/Binaryify/OneDark-Pro) themes for iTerm and VSCode (even though VSCode is _currently_ controlled by the [built-in sync](https://code.visualstudio.com/docs/editor/settings-sync))
-* ~~Commented code, so you know what is actually going on~~ (Not anymore, to be honest...)
+This repo is an example of how to manage dotfiles with Ansible. The main goal is to have a simple and easy way to manage dotfiles and configurations across multiple machines, without making it too much complex.
 
 ### Installation
+
+0. Install Xcode Command Line Tools:
+
+    ```bash
+    xcode-select --install
+    sudo xcodebuild -license accept
+    ```
 
 1. Make sure to uprade Pip Homebrew before installing Ansible:
 
@@ -45,7 +22,7 @@ iTerm | Visual Studio Code
 2. Fork this repository:
 
     ```bash
-    git clone https://github.com/frdmn/dotfiles ~/.dotfiles
+    git clone https://github.com/guray00/dotfiles-example ~/.dotfiles
     ```
 
 3. Copy and adjust the default configuration file:
@@ -133,3 +110,7 @@ Explanation of the directories:
 ### Version
 
 2.0
+
+## Reference
+
+This configuration is a fork of https://github.com/frdmn/dotfiles

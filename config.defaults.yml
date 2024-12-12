@@ -1,109 +1,124 @@
 ---
 brew_taps:
   - domt4/autoupdate
-  - frdmn/formulas
   - homebrew/cask-versions
   - homebrew/cask-fonts
-  - yt-dlp/taps
 
 brew_packages:
-  - ansible
-  - asciinema
-  - bat
-  - bitwarden-cli
-  - composer
-  - coreutils
-  - ddig
-  - dev-search
-  - exa
-  - exiftool
-  - ffmpeg
+  - git
   - git-extras
-  - git-shift
-  - go
+  - ansible
+  - terminal-notifier     # used inside this repo
+  - neovim
+  - asciinema
+  - bitwarden-cli
+  - coreutils
+  - exa                   # modern ls
+  - ripgrep               # modern grep
+  - bat                   # modern cat
+  - ffmpeg
   - gpg2
-  - htop
+  - btop
   - imapsync
   - iperf
-  - jq
-  - mas
-  - media-info
-  - mitmproxy
-  - mtr
+  - mas                   # mac store command line interface
   - nmap
-  - nodejs
-  - odig
-  - pinentry-mac
-  - ruby
-  - telnet
-  - terminal-notifier
   - tmux
-  - uping
+  - node
   - wget
-  - yt-dlp
   - zplug
   - zsh
+  - cowsay                # funny terminal stuff
+  - neofetch              # informations about the system
+  - stow                  # must for syslink files
+  - duti                  # setup defaults from cmd line
+  - syncthing
+  - openjdk
+  - postgresql
+  - speedtest-cli
+  - tree
+  - obsidian
 
 cask_packages:
-  - 1password
+  - github
+  - brave-browser
   - aerial
-  - alfred
+  - raycast               # alfred alternative
+  - arc                   # browser
   - appcleaner
-  - atext
-  - bartender
-  - bitwarden
-  - carbon-copy-cloner
   - discord
   - docker
   - dropbox
-  - dropshare
   - font-hack-nerd-font
-  - gas-mask
-  - gitup
   - google-chrome
-  - hex-fiend
   - iterm2
-  - keka
-  - nordvpn
-  - nvalt
-  - qlmarkdown
   - qlstephen
   - quicklook-json
   - spotify
   - suspicious-package
   - telegram
-  - textual
-  - transmit
-  - vagrant
   - visual-studio-code
-  - vlc
-  - wireshark
+  - iina
+  - karabiner-elements
+  - expressions
+  - insomnia                # postman alternative opensource
+  - zoom
+  - gimp
+  - inkscape
+  - blackhole-2ch           # virtual audio cable
+  - cakebrew
+  - notesnook
+  - the-unarchiver
+  - microsoft-office
+  - whatsapp
+  - ngrok
+  - figma
+  - microsoft-teams
+  - obs
+  - reflector
+  - rectangle
+  - syncthing       # parte visuale
+  - font-fira-code
+  - font-poppins
+  - authy
+  - ghidra
+  - openinterminal  # shortcut for finder
+  - raspberry-pi-imager
+  - localsend
+  # - vlc
+  # - postman
 
-gem_packages:
-  - nokogiri
+# gem_packages:
+  # - nokogiri
 
 mas_packages:
-  - 1451685025  # Wireguard
-  - 411643860  # DaisyDisk
-  - 1295203466  # Microsoft Remote Desktop
-  - 408981434  # iMovie
-  - 430255202  # Mactracker
-  - 409183694  # Keynote
-  - 1289583905  # Pixelmator Pro
+  - 1451685025    # Wireguard
+  - 409183694     # Keynote
+  - 1452453066    # HiddenBar
+  - 571213070     # Da Vinci Resolve
+  - 1284863847    # unsplash wallpaper
+  - 937984704     # amphetamine
+  
+  # - 1295203466    # Microsoft Remote Desktop
+  # - 1289583905  # Pixelmator Pro
+  # - 408981434     # iMovie
+  # - 430255202     # Mactracker
 
 npm_packages:
-  - bower
-  - giracli
-  - grunt
-  - gulp
-  - init.js
-  - json
-  - prettyjson
-  - tlstools
-  - yarn
-  - yo
+  # - bower
+  # - giracli
+  # - grunt
+  # - gulp
+  # - init.js
+  # - json
+  # - prettyjson
+  # - tlstools
+  # - yarn
+  # - yo
+  - nodemon
 
 pip_packages:
   - beautifulsoup4
   - docker
   - ffpb
+  - patool
